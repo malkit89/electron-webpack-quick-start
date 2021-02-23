@@ -8,7 +8,6 @@ USER gitpod
 RUN sudo apt-get -q update && \
     sudo apt-get install -yq bastet && \
     sudo rm -rf /var/lib/apt/lists/* && \
-    apt install libnss && \
-    apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+    sudo apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev
 #
 # More information: https://www.gitpod.io/docs/config-docker/
