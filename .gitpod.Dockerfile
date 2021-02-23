@@ -6,7 +6,7 @@ USER gitpod
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
 RUN sudo apt-get -q update && \
-    sudo apt-get install -yq bastet && \
-    sudo rm -rf /var/lib/apt/lists/*
+    apt install libnss && \
+    apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
 #
 # More information: https://www.gitpod.io/docs/config-docker/
